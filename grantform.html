@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="grantform.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">Crest Foundation</div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#grants">Grants</a></li>
+                    <li><a href="#apply">Apply</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+   <section  id="apply" class="application" >
+        <div class="container">
+            <h2 class="section-title">Apply for a Grant</h2>
+            <form action="grant.php" method="post">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="project">Project Description</label>
+                    <textarea id="project" required></textarea>
+                </div>
+                <button type="submit" class="btn">Submit Application</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Crest Foundation. All rights reserved. | <a href="#">Privacy Policy</a></p>
+        </div>
+    </footer> 
+ <script src="grantform.js"> </script>
+</body>
+</html>
